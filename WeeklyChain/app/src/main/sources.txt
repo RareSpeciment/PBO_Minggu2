@@ -1,0 +1,14 @@
+C:\Users\ACER GAMING\OneDrive\Dokumen\PBO_2026\WeeklyChain\app\src\main\java\weeklychain\database\Database.java
+C:\Users\ACER GAMING\OneDrive\Dokumen\PBO_2026\WeeklyChain\app\src\main\java\weeklychain\enums\TipeUser.java
+C:\Users\ACER GAMING\OneDrive\Dokumen\PBO_2026\WeeklyChain\app\src\main\java\weeklychain\enums\UserStatus.java
+C:\Users\ACER GAMING\OneDrive\Dokumen\PBO_2026\WeeklyChain\app\src\main\java\weeklychain\model\DosenHonorer.java
+C:\Users\ACER GAMING\OneDrive\Dokumen\PBO_2026\WeeklyChain\app\src\main\java\weeklychain\model\DosenTetap.java
+C:\Users\ACER GAMING\OneDrive\Dokumen\PBO_2026\WeeklyChain\app\src\main\java\weeklychain\model\Karyawan.java
+C:\Users\ACER GAMING\OneDrive\Dokumen\PBO_2026\WeeklyChain\app\src\main\java\weeklychain\model\Mahasiswa.java
+C:\Users\ACER GAMING\OneDrive\Dokumen\PBO_2026\WeeklyChain\app\src\main\java\weeklychain\model\Matakuliah.java
+C:\Users\ACER GAMING\OneDrive\Dokumen\PBO_2026\WeeklyChain\app\src\main\java\weeklychain\model\PengambilanMatkul.java
+C:\Users\ACER GAMING\OneDrive\Dokumen\PBO_2026\WeeklyChain\app\src\main\java\weeklychain\model\Staff.java
+C:\Users\ACER GAMING\OneDrive\Dokumen\PBO_2026\WeeklyChain\app\src\main\java\weeklychain\model\User.java
+C:\Users\ACER GAMING\OneDrive\Dokumen\PBO_2026\WeeklyChain\app\src\main\java\weeklychain\view\App.java
+C:\Users\ACER GAMING\OneDrive\Dokumen\PBO_2026\WeeklyChain\app\src\main\java\weeklychain\view\AppConfig.java
+C:\Users\ACER GAMING\OneDrive\Dokumen\PBO_2026\WeeklyChain\app\src\main\java\weeklychain\view\MainApp.java
