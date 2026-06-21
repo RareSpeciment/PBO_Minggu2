@@ -1,6 +1,7 @@
 package weeklychain.model;
 
 import weeklychain.enums.UserStatus;
+import java.util.List;
 import weeklychain.enums.TipeUser;
 
 public class Mahasiswa extends User {
@@ -41,43 +42,27 @@ public class Mahasiswa extends User {
         this.kode_jurusan = kode_jurusan;
     }
 
-    public double hitungIp(PengambilanMatkul[][] Pmatkul, int indexMhs) {
+    public double hitungIPMahasiswa(List<PengambilanMatkul> daftarNilai) {
         double totalNilaiSks = 0.0;
         int totalSks = 0;
 
-        for (int i = 0; i < Pmatkul[indexMhs].length; i++) {
-            if (Pmatkul[indexMhs][i] != null) {
-                int nilaiasli = Pmatkul[indexMhs][i].getNilai();
-                int sksMatkul = Pmatkul[indexMhs][i].getMatakuliah().getSks();
+        for (PengambilanMatkul pm : daftarNilai) {
+            if (pm == null) continue;
+            int nilai = pm.getNilai();
+            int sks = pm.getMatakuliah() != null ? pm.getMatakuliah().getSks() : 0;
 
-                double bobot = 0.0;
-                if (nilaiasli >= 80) {
-                    bobot = 4.0;
-                } else {
-                    if (nilaiasli >= 70) {
-                        bobot = 3.0;
-                    } else {
-                        if (nilaiasli >= 60) {
-                            bobot = 2.0;
-                        } else {
-                            if (nilaiasli >= 50) {
-                                bobot = 1.0;
-                            } else {
-                                bobot = 0.0;
-                            }
-                        }
-                    }
-                }
+            double bobot;
+            if (nilai >= 80) bobot = 4.0;
+            else if (nilai >= 70) bobot = 3.0;
+            else if (nilai >= 60) bobot = 2.0;
+            else if (nilai >= 50) bobot = 1.0;
+            else bobot = 0.0;
 
-                totalNilaiSks += bobot * sksMatkul;
-                totalSks += sksMatkul;
-            }
+            totalNilaiSks += bobot * sks;
+            totalSks += sks;
         }
 
-        if (totalSks == 0) {
-            return 0.0;
-        }
-
+        if (totalSks == 0) return 0.0;
         return totalNilaiSks / totalSks;
     }
 }

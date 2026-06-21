@@ -3,14 +3,14 @@ package weeklychain.model;
 public class Matakuliah {
     String kode;
     String nama;
-    String status;
     int sks;
+    String kode_jurusan;
 
-    public Matakuliah(String kode, String nama, String status, int sks) {
+    public Matakuliah(String kode, String nama, int sks, String kode_jurusan) {
         this.kode = kode;
         this.nama = nama;
-        this.status = status;
         this.sks = sks;
+        this.kode_jurusan = kode_jurusan;
     }
 
     public String getKode() {
@@ -29,14 +29,6 @@ public class Matakuliah {
         this.nama = nama;
     }
 
-    public String getStatus() {
-        return status;
-    }
-
-    public void setStatus(String status) {
-        this.status = status;
-    }
-
     public int getSks() {
         return sks;
     }
@@ -45,4 +37,11 @@ public class Matakuliah {
         this.sks = sks;
     }
 
+    public String getKode_jurusan() {
+        return kode_jurusan;
+    }
+
+    public void setKode_jurusan(String kode_jurusan) {
+        this.kode_jurusan = kode_jurusan;
+    }
 }
